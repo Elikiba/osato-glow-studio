@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import aboutHands from "@/assets/about-hands.jpg";
 import catering from "@/assets/catering.jpg";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -73,9 +74,15 @@ function AboutPage() {
           <div className="bg-card p-10 md:p-14 flex flex-col justify-center gap-6">
             <h2 className="font-display text-4xl md:text-5xl">Want me at your table?</h2>
             <p className="text-muted-foreground">Birthdays, anniversaries, baby showers, christenings — or just a Sunday with the people you love most.</p>
-            <Link to="/contact" className="self-start inline-flex items-center gap-3 px-7 py-4 rounded-full bg-foreground text-background text-sm tracking-wide hover:shadow-glow transition-all">
-              Get in touch →
-            </Link>
+            <a
+              href={whatsappLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="self-start inline-flex items-center gap-3 px-7 py-4 rounded-full bg-foreground text-background text-sm tracking-wide hover:shadow-glow transition-all"
+            >
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              Message me on WhatsApp →
+            </a>
           </div>
         </div>
       </section>
