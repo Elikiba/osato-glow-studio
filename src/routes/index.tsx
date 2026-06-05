@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import heroCake from "@/assets/hero-cake.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 import aboutHands from "@/assets/about-hands.jpg";
 import catering from "@/assets/catering.jpg";
 import galleryTart from "@/assets/gallery-tart.jpg";
@@ -25,7 +26,17 @@ function Index() {
     <SiteLayout>
       {/* HERO */}
       <section className="relative min-h-[92vh] flex items-center px-6 lg:px-10 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-warm" />
+        <div className="absolute inset-0">
+          <img
+            src={heroBg}
+            alt="Osato's bakery"
+            className="w-full h-full object-cover"
+            width={1920}
+            height={1280}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/30" />
+          <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse" />
+        </div>
         <div className="relative mx-auto max-w-7xl grid lg:grid-cols-12 gap-12 items-center w-full pt-12 pb-24">
           <div className="lg:col-span-6 space-y-8 animate-fade-up">
             <span className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.4em] text-muted-foreground">
@@ -55,7 +66,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="lg:col-span-6 relative">
+          <div className="lg:col-span-6 relative hidden lg:block">
             <div className="absolute -inset-10 bg-gradient-glow blur-3xl opacity-80 animate-glow-pulse" />
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-soft animate-float">
               <img
