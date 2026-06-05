@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
+import { whatsappLink } from "@/lib/whatsapp";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -44,12 +45,15 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Link
-          to="/contact"
-          className="hidden md:inline-flex items-center text-xs uppercase tracking-[0.28em] px-5 py-3 rounded-full border border-foreground/20 hover:border-foreground/60 hover:bg-foreground hover:text-background transition-all"
+        <a
+          href={whatsappLink()}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] px-5 py-3 rounded-full border border-foreground/20 hover:border-foreground/60 hover:bg-foreground hover:text-background transition-all"
         >
-          Order
-        </Link>
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          Order on WhatsApp
+        </a>
         <button
           onClick={() => setOpen((v) => !v)}
           className="md:hidden p-2 text-foreground"
