@@ -27,7 +27,7 @@ function Index() {
   return (
     <SiteLayout>
       {/* HERO */}
-      <section className="relative min-h-[92vh] flex items-center px-6 lg:px-10 overflow-hidden">
+      <section className="relative min-h-[92vh] flex items-center justify-center px-6 lg:px-10 overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroBg}
@@ -36,58 +36,38 @@ function Index() {
             width={1920}
             height={1280}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
-          <div className="absolute inset-0 bg-background/30" />
-          <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse opacity-70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/80" />
+          <div className="absolute inset-0 bg-background/20" />
+          <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse opacity-60" />
         </div>
-        <div className="relative mx-auto max-w-7xl grid lg:grid-cols-12 gap-12 items-center w-full pt-12 pb-24">
-          <div className="lg:col-span-6 space-y-8 animate-fade-up">
-            <span className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.4em] text-muted-foreground">
-              <span className="h-px w-10 bg-foreground/40" /> A baker's quiet kitchen
-            </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.02] text-balance">
-              Slow baked,<br />
-              <span className="italic text-gold">softly</span> shared.
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-              I'm Osato — a mother, a baker, a caterer. From my small kitchen in Italy, I make cakes worth lingering over and meals that feel like a long embrace.
-            </p>
-            <div className="flex flex-wrap gap-4 pt-2">
-              <a
-                href={whatsappLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-foreground text-background text-sm tracking-wide hover:shadow-glow transition-all"
-              >
-                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                Order on WhatsApp
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-              </a>
-              <Link
-                to="/menu"
-                className="inline-flex items-center px-7 py-4 rounded-full border border-foreground/20 text-sm tracking-wide hover:border-foreground/60 transition-all"
-              >
-                Explore the menu
-              </Link>
-            </div>
-          </div>
-
-          <div className="lg:col-span-6 relative hidden lg:block">
-            <div className="absolute -inset-10 bg-gradient-glow blur-3xl opacity-80 animate-glow-pulse" />
-            <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-soft animate-float">
-              <img
-                src={heroCake}
-                alt="A floral berry layer cake by Osato"
-                className="w-full h-full object-cover"
-                width={1536}
-                height={1920}
-              />
-              <div className="absolute inset-0 ring-1 ring-inset ring-white/20 rounded-[2rem]" />
-            </div>
-            <div className="absolute -bottom-6 -left-6 hidden md:block bg-card/80 backdrop-blur-xl border border-border/60 rounded-2xl px-5 py-4 shadow-elegant max-w-[14rem]">
-              <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Signature</p>
-              <p className="font-display text-lg leading-tight mt-1">Berry & gold leaf</p>
-            </div>
+        <div className="relative mx-auto max-w-3xl w-full text-center space-y-8 animate-fade-up pt-12 pb-24">
+          <span className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.4em] text-muted-foreground">
+            <span className="h-px w-10 bg-foreground/40" /> A baker's quiet kitchen <span className="h-px w-10 bg-foreground/40" />
+          </span>
+          <h1 className="font-display text-5xl md:text-7xl lg:text-[6rem] leading-[1.02] text-balance drop-shadow-sm">
+            Slow baked,<br />
+            <span className="italic text-gold">softly</span> shared.
+          </h1>
+          <p className="text-lg text-foreground/80 max-w-xl mx-auto leading-relaxed">
+            I'm Osato — a mother, a baker, a caterer. From my small kitchen in Italy, I make cakes worth lingering over and meals that feel like a long embrace.
+          </p>
+          <div className="flex flex-wrap gap-4 pt-2 justify-center">
+            <a
+              href={whatsappLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-foreground text-background text-sm tracking-wide hover:shadow-glow transition-all"
+            >
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              Order on WhatsApp
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </a>
+            <Link
+              to="/menu"
+              className="inline-flex items-center px-7 py-4 rounded-full border border-foreground/30 bg-background/40 backdrop-blur-sm text-sm tracking-wide hover:border-foreground/60 transition-all"
+            >
+              Explore the menu
+            </Link>
           </div>
         </div>
       </section>
