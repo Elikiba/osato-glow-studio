@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Logo } from "./Logo";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
@@ -17,11 +18,11 @@ export function Footer() {
           <Link to="/about" className="block hover:text-gold transition-colors">Our story</Link>
           <Link to="/menu" className="block hover:text-gold transition-colors">Menu</Link>
           <Link to="/gallery" className="block hover:text-gold transition-colors">Gallery</Link>
-          <Link to="/contact" className="block hover:text-gold transition-colors">Place an order</Link>
+          <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="block hover:text-gold transition-colors">Order on WhatsApp</a>
         </div>
         <div className="space-y-3 text-sm">
           <h4 className="text-xs uppercase tracking-[0.32em] text-muted-foreground">Reach Osato</h4>
-          <p className="text-foreground/80">hello@osatobakes.it</p>
+          <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="block text-foreground/80 hover:text-gold transition-colors">WhatsApp · all orders</a>
           <p className="text-foreground/80">Based in Italy · Available for events</p>
           <p className="text-foreground/80">Mon – Sat · By appointment</p>
         </div>

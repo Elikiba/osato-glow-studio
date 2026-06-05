@@ -8,6 +8,8 @@ import catering from "@/assets/catering.jpg";
 import galleryTart from "@/assets/gallery-tart.jpg";
 import galleryMacarons from "@/assets/gallery-macarons.jpg";
 import galleryWedding from "@/assets/gallery-wedding.jpg";
+import founder from "@/assets/founder.jpg";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,8 +36,9 @@ function Index() {
             width={1920}
             height={1280}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/30" />
-          <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
+          <div className="absolute inset-0 bg-background/30" />
+          <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse opacity-70" />
         </div>
         <div className="relative mx-auto max-w-7xl grid lg:grid-cols-12 gap-12 items-center w-full pt-12 pb-24">
           <div className="lg:col-span-6 space-y-8 animate-fade-up">
@@ -50,18 +53,21 @@ function Index() {
               I'm Osato — a mother, a baker, a caterer. From my small kitchen in Italy, I make cakes worth lingering over and meals that feel like a long embrace.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <Link
-                to="/menu"
+              <a
+                href={whatsappLink()}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-foreground text-background text-sm tracking-wide hover:shadow-glow transition-all"
               >
-                Explore the menu
+                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                Order on WhatsApp
                 <span className="transition-transform group-hover:translate-x-1">→</span>
-              </Link>
+              </a>
               <Link
-                to="/gallery"
+                to="/menu"
                 className="inline-flex items-center px-7 py-4 rounded-full border border-foreground/20 text-sm tracking-wide hover:border-foreground/60 transition-all"
               >
-                View the gallery
+                Explore the menu
               </Link>
             </div>
           </div>
@@ -94,6 +100,64 @@ function Index() {
             "Every cake begins the night before — with quiet hands, good butter, and a little patience."
           </p>
           <p className="text-sm text-muted-foreground italic">— Osato</p>
+        </div>
+      </section>
+
+      {/* MEET THE FOUNDER */}
+      <section className="relative px-6 lg:px-10 py-24">
+        <div className="mx-auto max-w-6xl grid lg:grid-cols-12 gap-14 items-center">
+          <div className="lg:col-span-5 relative">
+            <div className="absolute -inset-8 bg-gradient-glow blur-3xl opacity-80 animate-glow-pulse" />
+            <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-soft">
+              <img
+                src={founder}
+                alt="Osato, founder and baker"
+                loading="lazy"
+                width={1200}
+                height={1500}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 ring-1 ring-inset ring-white/20 rounded-[2rem]" />
+            </div>
+            <div className="absolute -bottom-5 -right-5 hidden md:block bg-card/85 backdrop-blur-xl border border-border/60 rounded-2xl px-5 py-4 shadow-elegant">
+              <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Placeholder</p>
+              <p className="font-display text-base leading-tight mt-1">Photo coming soon</p>
+            </div>
+          </div>
+          <div className="lg:col-span-7 space-y-6 animate-fade-up">
+            <span className="text-xs uppercase tracking-[0.4em] text-muted-foreground">Meet the founder</span>
+            <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-balance">
+              Hello, I'm <span className="italic text-gold">Osato</span>.
+            </h2>
+            <div className="space-y-4 text-lg leading-relaxed text-foreground/80 max-w-xl">
+              <p>
+                A full-time mum and professional baker living in Italy. In between school runs and bedtime stories, I bake — slowly, with real butter, real fruit, and a quiet kind of love.
+              </p>
+              <p>
+                I cake for birthdays and weddings, and I cater intimate, Italian-inspired meals for the families and private events I'm lucky to be invited to.
+              </p>
+              <p className="font-display italic text-2xl text-foreground">
+                Everything is made the way I'd make it for my own.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-4 pt-2">
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-foreground/30 text-sm tracking-wide hover:bg-foreground hover:text-background transition-all"
+              >
+                Read my story →
+              </Link>
+              <a
+                href={whatsappLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-foreground text-background text-sm tracking-wide hover:shadow-glow transition-all"
+              >
+                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -172,14 +236,17 @@ function Index() {
               Let's bake it <span className="italic text-gold">together</span>.
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Custom orders open monthly. Tell me about your day and I'll write back personally.
+              All orders are placed via WhatsApp — tell me about your day and I'll write back personally.
             </p>
-            <Link
-              to="/contact"
+            <a
+              href={whatsappLink()}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-foreground text-background text-sm tracking-wide hover:shadow-glow transition-all"
             >
-              Begin a conversation →
-            </Link>
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              Message Osato on WhatsApp →
+            </a>
           </div>
         </div>
       </section>
