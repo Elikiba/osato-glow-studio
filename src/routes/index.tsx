@@ -8,6 +8,8 @@ import catering from "@/assets/catering.jpg";
 import galleryTart from "@/assets/gallery-tart.jpg";
 import galleryMacarons from "@/assets/gallery-macarons.jpg";
 import galleryWedding from "@/assets/gallery-wedding.jpg";
+import founder from "@/assets/founder.jpg";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,8 +36,9 @@ function Index() {
             width={1920}
             height={1280}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/30" />
-          <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
+          <div className="absolute inset-0 bg-background/30" />
+          <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse opacity-70" />
         </div>
         <div className="relative mx-auto max-w-7xl grid lg:grid-cols-12 gap-12 items-center w-full pt-12 pb-24">
           <div className="lg:col-span-6 space-y-8 animate-fade-up">
@@ -50,18 +53,21 @@ function Index() {
               I'm Osato — a mother, a baker, a caterer. From my small kitchen in Italy, I make cakes worth lingering over and meals that feel like a long embrace.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <Link
-                to="/menu"
+              <a
+                href={whatsappLink()}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-7 py-4 rounded-full bg-foreground text-background text-sm tracking-wide hover:shadow-glow transition-all"
               >
-                Explore the menu
+                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                Order on WhatsApp
                 <span className="transition-transform group-hover:translate-x-1">→</span>
-              </Link>
+              </a>
               <Link
-                to="/gallery"
+                to="/menu"
                 className="inline-flex items-center px-7 py-4 rounded-full border border-foreground/20 text-sm tracking-wide hover:border-foreground/60 transition-all"
               >
-                View the gallery
+                Explore the menu
               </Link>
             </div>
           </div>
