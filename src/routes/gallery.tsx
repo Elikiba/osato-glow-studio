@@ -3,14 +3,16 @@ import { SiteLayout } from "@/components/site/Layout";
 import { useState } from "react";
 import heroCake from "@/assets/hero-cake.jpg";
 import aboutHands from "@/assets/about-hands.jpg";
-import catering from "@/assets/catering.jpg";
-import bread from "@/assets/gallery-bread.jpg";
 import tart from "@/assets/gallery-tart.jpg";
 import macarons from "@/assets/gallery-macarons.jpg";
 import wedding from "@/assets/gallery-wedding.jpg";
-import chocolate from "@/assets/gallery-chocolate.jpg";
-import pasta from "@/assets/gallery-pasta.jpg";
-import birthday from "@/assets/gallery-birthday.jpg";
+import realCakePink from "@/assets/real-cake-pink.jpg.asset.json";
+import realCakeBible from "@/assets/real-cake-bible.jpg.asset.json";
+import realCakeRoses from "@/assets/real-cake-roses.jpg.asset.json";
+import realJollofTurkey from "@/assets/real-jollof-turkey.jpg.asset.json";
+import realJollofChicken from "@/assets/real-jollof-chicken.jpg.asset.json";
+import realPlantainEfo from "@/assets/real-plantain-efo.jpg.asset.json";
+import realNoodles from "@/assets/real-noodles.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -29,15 +31,16 @@ type Tag = "Cakes" | "Pastries" | "Catering";
 type Item = { src: string; alt: string; tag: Tag; span?: string };
 
 const items: Item[] = [
-  { src: heroCake, alt: "Berry layer cake with edible flowers", tag: "Cakes", span: "row-span-2" },
+  { src: realCakePink.url, alt: "Two-tier pink buttercream birthday cake", tag: "Cakes", span: "row-span-2" },
+  { src: realJollofChicken.url, alt: "Jollof rice with grilled chicken and coleslaw", tag: "Catering" },
+  { src: realCakeRoses.url, alt: "White fondant birthday cake with red roses", tag: "Cakes", span: "row-span-2" },
+  { src: realPlantainEfo.url, alt: "Fried plantain with efo riro stew", tag: "Catering" },
+  { src: realCakeBible.url, alt: "Holy Bible themed celebration cake", tag: "Cakes" },
+  { src: realJollofTurkey.url, alt: "Jollof rice with turkey and coleslaw", tag: "Catering" },
+  { src: realNoodles.url, alt: "Stir-fried noodles with vegetables", tag: "Catering" },
   { src: macarons, alt: "Stacked pastel macarons", tag: "Pastries" },
-  { src: wedding, alt: "Tiered floral wedding cake at sunset", tag: "Cakes", span: "row-span-2" },
   { src: tart, alt: "Strawberry glazed tart", tag: "Pastries" },
-  { src: pasta, alt: "Handmade pasta and antipasti", tag: "Catering" },
-  { src: birthday, alt: "Pink rose buttercream birthday cake", tag: "Cakes" },
-  { src: chocolate, alt: "Chocolate ganache drip cake", tag: "Cakes" },
-  { src: catering, alt: "Italian dinner spread by candlelight", tag: "Catering", span: "row-span-2" },
-  { src: bread, alt: "Rustic golden bread loaf", tag: "Pastries" },
+  { src: wedding, alt: "Tiered floral wedding cake at sunset", tag: "Cakes" },
   { src: aboutHands, alt: "Hands piping a tiered cake", tag: "Cakes" },
 ];
 
