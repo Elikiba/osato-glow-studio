@@ -6,8 +6,8 @@ import aboutHands from "@/assets/about-hands.jpg";
 import galleryTart from "@/assets/gallery-tart.jpg";
 import galleryMacarons from "@/assets/gallery-macarons.jpg";
 import galleryWedding from "@/assets/gallery-wedding.jpg";
-import founder from "@/assets/founder.jpg";
-import cakeVideo from "@/assets/cake-hero.mp4.asset.json";
+import founderAsset from "@/assets/osato-founder.png.asset.json";
+import heroCakeAsset from "@/assets/hero-cake-pink.jpg.asset.json";
 import realJollofChicken from "@/assets/real-jollof-chicken.jpg.asset.json";
 import realCakePink from "@/assets/real-cake-pink.jpg.asset.json";
 import realCakeRoses from "@/assets/real-cake-roses.jpg.asset.json";
@@ -31,13 +31,9 @@ function Index() {
       {/* HERO */}
       <section className="relative min-h-[92vh] flex items-center justify-center px-6 lg:px-10 overflow-hidden">
         <div className="absolute inset-0">
-          <video
-            src={cakeVideo.url}
-            poster={heroBg}
-            autoPlay
-            muted
-            loop
-            playsInline
+          <img
+            src={heroCakeAsset.url}
+            alt="Pink celebration cake by Osato"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/80" />
