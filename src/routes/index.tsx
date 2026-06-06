@@ -6,8 +6,8 @@ import aboutHands from "@/assets/about-hands.jpg";
 import galleryTart from "@/assets/gallery-tart.jpg";
 import galleryMacarons from "@/assets/gallery-macarons.jpg";
 import galleryWedding from "@/assets/gallery-wedding.jpg";
-import founder from "@/assets/founder.jpg";
-import cakeVideo from "@/assets/cake-hero.mp4.asset.json";
+import founderAsset from "@/assets/osato-founder.png.asset.json";
+import heroCakeAsset from "@/assets/hero-cake-pink.jpg.asset.json";
 import realJollofChicken from "@/assets/real-jollof-chicken.jpg.asset.json";
 import realCakePink from "@/assets/real-cake-pink.jpg.asset.json";
 import realCakeRoses from "@/assets/real-cake-roses.jpg.asset.json";
@@ -31,13 +31,9 @@ function Index() {
       {/* HERO */}
       <section className="relative min-h-[92vh] flex items-center justify-center px-6 lg:px-10 overflow-hidden">
         <div className="absolute inset-0">
-          <video
-            src={cakeVideo.url}
-            poster={heroBg}
-            autoPlay
-            muted
-            loop
-            playsInline
+          <img
+            src={heroCakeAsset.url}
+            alt="Pink celebration cake by Osato"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/80" />
@@ -94,7 +90,7 @@ function Index() {
             <div className="absolute -inset-8 bg-gradient-glow blur-3xl opacity-80 animate-glow-pulse" />
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-soft">
               <img
-                src={founder}
+                src={founderAsset.url}
                 alt="Osato, founder and baker"
                 loading="lazy"
                 width={1200}
@@ -102,10 +98,6 @@ function Index() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-white/20 rounded-[2rem]" />
-            </div>
-            <div className="absolute -bottom-5 -right-5 hidden md:block bg-card/85 backdrop-blur-xl border border-border/60 rounded-2xl px-5 py-4 shadow-elegant">
-              <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Placeholder</p>
-              <p className="font-display text-base leading-tight mt-1">Photo coming soon</p>
             </div>
           </div>
           <div className="lg:col-span-7 space-y-6 animate-fade-up">
