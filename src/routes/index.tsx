@@ -90,7 +90,7 @@ function Index() {
             <div className="absolute -inset-8 bg-gradient-glow blur-3xl opacity-80 animate-glow-pulse" />
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-soft">
               <img
-                src={founder}
+                src={founderAsset.url}
                 alt="Osato, founder and baker"
                 loading="lazy"
                 width={1200}
@@ -98,10 +98,6 @@ function Index() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-white/20 rounded-[2rem]" />
-            </div>
-            <div className="absolute -bottom-5 -right-5 hidden md:block bg-card/85 backdrop-blur-xl border border-border/60 rounded-2xl px-5 py-4 shadow-elegant">
-              <p className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Placeholder</p>
-              <p className="font-display text-base leading-tight mt-1">Photo coming soon</p>
             </div>
           </div>
           <div className="lg:col-span-7 space-y-6 animate-fade-up">
