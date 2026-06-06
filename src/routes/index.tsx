@@ -1,14 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
-import heroCake from "@/assets/hero-cake.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 import aboutHands from "@/assets/about-hands.jpg";
-import catering from "@/assets/catering.jpg";
 import galleryTart from "@/assets/gallery-tart.jpg";
 import galleryMacarons from "@/assets/gallery-macarons.jpg";
 import galleryWedding from "@/assets/gallery-wedding.jpg";
 import founder from "@/assets/founder.jpg";
+import cakeVideo from "@/assets/cake-hero.mp4.asset.json";
+import realJollofChicken from "@/assets/real-jollof-chicken.jpg.asset.json";
+import realCakePink from "@/assets/real-cake-pink.jpg.asset.json";
+import realCakeRoses from "@/assets/real-cake-roses.jpg.asset.json";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const Route = createFileRoute("/")({
@@ -29,12 +31,14 @@ function Index() {
       {/* HERO */}
       <section className="relative min-h-[92vh] flex items-center justify-center px-6 lg:px-10 overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={heroBg}
-            alt="Osato's bakery"
+          <video
+            src={cakeVideo.url}
+            poster={heroBg}
+            autoPlay
+            muted
+            loop
+            playsInline
             className="w-full h-full object-cover"
-            width={1920}
-            height={1280}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/80" />
           <div className="absolute inset-0 bg-background/20" />
@@ -156,9 +160,9 @@ function Index() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { img: aboutHands, title: "Celebration cakes", text: "Tiered, buttercream, fruit & flower — for weddings, birthdays and quiet milestones." },
-              { img: catering, title: "Family catering", text: "Slow-cooked Italian dishes for intimate dinners and family gatherings." },
-              { img: galleryWedding, title: "Event styling", text: "From a single cake to a full dessert table — softly styled for your day." },
+              { img: realCakePink.url, title: "Celebration cakes", text: "Tiered, buttercream, fondant & florals — for weddings, birthdays and quiet milestones." },
+              { img: realJollofChicken.url, title: "Family catering", text: "Soulful, slow-cooked dishes for intimate dinners and family gatherings." },
+              { img: realCakeRoses.url, title: "Event styling", text: "From a single cake to a full dessert table — softly styled for your day." },
             ].map((card) => (
               <article key={card.title} className="group relative overflow-hidden rounded-3xl bg-card hover-lift shadow-elegant">
                 <div className="aspect-[4/5] overflow-hidden">
