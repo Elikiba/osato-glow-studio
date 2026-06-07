@@ -6,11 +6,11 @@ import aboutHands from "@/assets/about-hands.jpg";
 import galleryTart from "@/assets/gallery-tart.jpg";
 import galleryMacarons from "@/assets/gallery-macarons.jpg";
 import galleryWedding from "@/assets/gallery-wedding.jpg";
-import founderAsset from "@/assets/osato-founder.png.asset.json";
-import heroCakeAsset from "@/assets/hero-cake-pink.jpg.asset.json";
-import realJollofChicken from "@/assets/real-jollof-chicken.jpg.asset.json";
-import realCakePink from "@/assets/real-cake-pink.jpg.asset.json";
-import realCakeRoses from "@/assets/real-cake-roses.jpg.asset.json";
+import founderAsset from "@/assets/osato-founder.png";
+import heroCakeAsset from "@/assets/hero-cake-pink.jpg";
+import realJollofChicken from "@/assets/real-jollof-chicken.jpg";
+import realCakePink from "@/assets/real-cake-pink.jpg";
+import realCakeRoses from "@/assets/real-cake-roses.jpg";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const Route = createFileRoute("/")({

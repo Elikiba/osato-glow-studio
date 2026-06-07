@@ -6,13 +6,13 @@ import aboutHands from "@/assets/about-hands.jpg";
 import tart from "@/assets/gallery-tart.jpg";
 import macarons from "@/assets/gallery-macarons.jpg";
 import wedding from "@/assets/gallery-wedding.jpg";
-import realCakePink from "@/assets/real-cake-pink.jpg.asset.json";
-import realCakeBible from "@/assets/real-cake-bible.jpg.asset.json";
-import realCakeRoses from "@/assets/real-cake-roses.jpg.asset.json";
-import realJollofTurkey from "@/assets/real-jollof-turkey.jpg.asset.json";
-import realJollofChicken from "@/assets/real-jollof-chicken.jpg.asset.json";
-import realPlantainEfo from "@/assets/real-plantain-efo.jpg.asset.json";
-import realNoodles from "@/assets/real-noodles.jpg.asset.json";
+import realCakePink from "@/assets/real-cake-pink.jpg";
+import realCakeBible from "@/assets/real-cake-bible.jpg";
+import realCakeRoses from "@/assets/real-cake-roses.jpg";
+import realJollofTurkey from "@/assets/real-jollof-turkey.jpg";
+import realJollofChicken from "@/assets/real-jollof-chicken.jpg";
+import realPlantainEfo from "@/assets/real-plantain-efo.jpg";
+import realNoodles from "@/assets/real-noodles.jpg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
