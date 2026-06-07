@@ -6,13 +6,13 @@ import aboutHands from "@/assets/about-hands.jpg";
 import tart from "@/assets/gallery-tart.jpg";
 import macarons from "@/assets/gallery-macarons.jpg";
 import wedding from "@/assets/gallery-wedding.jpg";
-import realCakePink from "@/assets/real-cake-pink.jpg.asset.json";
-import realCakeBible from "@/assets/real-cake-bible.jpg.asset.json";
-import realCakeRoses from "@/assets/real-cake-roses.jpg.asset.json";
-import realJollofTurkey from "@/assets/real-jollof-turkey.jpg.asset.json";
-import realJollofChicken from "@/assets/real-jollof-chicken.jpg.asset.json";
-import realPlantainEfo from "@/assets/real-plantain-efo.jpg.asset.json";
-import realNoodles from "@/assets/real-noodles.jpg.asset.json";
+import realCakePink from "@/assets/real-cake-pink.jpg";
+import realCakeBible from "@/assets/real-cake-bible.jpg";
+import realCakeRoses from "@/assets/real-cake-roses.jpg";
+import realJollofTurkey from "@/assets/real-jollof-turkey.jpg";
+import realJollofChicken from "@/assets/real-jollof-chicken.jpg";
+import realPlantainEfo from "@/assets/real-plantain-efo.jpg";
+import realNoodles from "@/assets/real-noodles.jpg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -31,13 +31,13 @@ type Tag = "Cakes" | "Pastries" | "Catering";
 type Item = { src: string; alt: string; tag: Tag; span?: string };
 
 const items: Item[] = [
-  { src: realCakePink.url, alt: "Two-tier pink buttercream birthday cake", tag: "Cakes", span: "row-span-2" },
-  { src: realJollofChicken.url, alt: "Jollof rice with grilled chicken and coleslaw", tag: "Catering" },
-  { src: realCakeRoses.url, alt: "White fondant birthday cake with red roses", tag: "Cakes", span: "row-span-2" },
-  { src: realPlantainEfo.url, alt: "Fried plantain with efo riro stew", tag: "Catering" },
-  { src: realCakeBible.url, alt: "Holy Bible themed celebration cake", tag: "Cakes" },
-  { src: realJollofTurkey.url, alt: "Jollof rice with turkey and coleslaw", tag: "Catering" },
-  { src: realNoodles.url, alt: "Stir-fried noodles with vegetables", tag: "Catering" },
+  { src: realCakePink, alt: "Two-tier pink buttercream birthday cake", tag: "Cakes", span: "row-span-2" },
+  { src: realJollofChicken, alt: "Jollof rice with grilled chicken and coleslaw", tag: "Catering" },
+  { src: realCakeRoses, alt: "White fondant birthday cake with red roses", tag: "Cakes", span: "row-span-2" },
+  { src: realPlantainEfo, alt: "Fried plantain with efo riro stew", tag: "Catering" },
+  { src: realCakeBible, alt: "Holy Bible themed celebration cake", tag: "Cakes" },
+  { src: realJollofTurkey, alt: "Jollof rice with turkey and coleslaw", tag: "Catering" },
+  { src: realNoodles, alt: "Stir-fried noodles with vegetables", tag: "Catering" },
   { src: macarons, alt: "Stacked pastel macarons", tag: "Pastries" },
   { src: tart, alt: "Strawberry glazed tart", tag: "Pastries" },
   { src: wedding, alt: "Tiered floral wedding cake at sunset", tag: "Cakes" },
