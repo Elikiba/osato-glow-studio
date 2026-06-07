@@ -32,10 +32,15 @@ jobs:
       - name: Build project
         run: bun run build
       
+      - name: Move files to root (fix for GitHub Pages)
+        run: |
+          cp -r dist/client/* ./public/
+          ls ./public/
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/client
+          path: ./public
 
   deploy:
     environment:
