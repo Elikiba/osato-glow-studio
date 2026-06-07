@@ -32,7 +32,7 @@ function Index() {
       <section className="relative min-h-[92vh] flex items-center justify-center px-6 lg:px-10 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={heroCakeAsset.url}
+            src={heroCakeAsset}
             alt="Pink celebration cake by Osato"
             className="w-full h-full object-cover"
           />
@@ -90,7 +90,7 @@ function Index() {
             <div className="absolute -inset-8 bg-gradient-glow blur-3xl opacity-80 animate-glow-pulse" />
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-soft">
               <img
-                src={founderAsset.url}
+                src={founderAsset}
                 alt="Osato, founder and baker"
                 loading="lazy"
                 width={1200}
@@ -152,9 +152,9 @@ function Index() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { img: realCakePink.url, title: "Celebration cakes", text: "Tiered, buttercream, fondant & florals — for weddings, birthdays and quiet milestones." },
-              { img: realJollofChicken.url, title: "Family catering", text: "Soulful, slow-cooked dishes for intimate dinners and family gatherings." },
-              { img: realCakeRoses.url, title: "Event styling", text: "From a single cake to a full dessert table — softly styled for your day." },
+              { img: realCakePink, title: "Celebration cakes", text: "Tiered, buttercream, fondant & florals — for weddings, birthdays and quiet milestones." },
+              { img: realJollofChicken, title: "Family catering", text: "Soulful, slow-cooked dishes for intimate dinners and family gatherings." },
+              { img: realCakeRoses, title: "Event styling", text: "From a single cake to a full dessert table — softly styled for your day." },
             ].map((card) => (
               <article key={card.title} className="group relative overflow-hidden rounded-3xl bg-card hover-lift shadow-elegant">
                 <div className="aspect-[4/5] overflow-hidden">

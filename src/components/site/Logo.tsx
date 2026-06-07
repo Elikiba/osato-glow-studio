@@ -5,7 +5,7 @@ export function Logo({ className = "" }: { className?: string }) {
   return (
     <Link to="/" className={`group inline-flex items-center gap-3 leading-none ${className}`}>
       <img
-        src={logoAsset.url}
+        src={logoAsset}
         alt="osatobakes"
         width={48}
         height={48}

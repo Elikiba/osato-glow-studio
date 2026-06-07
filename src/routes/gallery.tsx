@@ -31,13 +31,13 @@ type Tag = "Cakes" | "Pastries" | "Catering";
 type Item = { src: string; alt: string; tag: Tag; span?: string };
 
 const items: Item[] = [
-  { src: realCakePink.url, alt: "Two-tier pink buttercream birthday cake", tag: "Cakes", span: "row-span-2" },
-  { src: realJollofChicken.url, alt: "Jollof rice with grilled chicken and coleslaw", tag: "Catering" },
-  { src: realCakeRoses.url, alt: "White fondant birthday cake with red roses", tag: "Cakes", span: "row-span-2" },
-  { src: realPlantainEfo.url, alt: "Fried plantain with efo riro stew", tag: "Catering" },
-  { src: realCakeBible.url, alt: "Holy Bible themed celebration cake", tag: "Cakes" },
-  { src: realJollofTurkey.url, alt: "Jollof rice with turkey and coleslaw", tag: "Catering" },
-  { src: realNoodles.url, alt: "Stir-fried noodles with vegetables", tag: "Catering" },
+  { src: realCakePink, alt: "Two-tier pink buttercream birthday cake", tag: "Cakes", span: "row-span-2" },
+  { src: realJollofChicken, alt: "Jollof rice with grilled chicken and coleslaw", tag: "Catering" },
+  { src: realCakeRoses, alt: "White fondant birthday cake with red roses", tag: "Cakes", span: "row-span-2" },
+  { src: realPlantainEfo, alt: "Fried plantain with efo riro stew", tag: "Catering" },
+  { src: realCakeBible, alt: "Holy Bible themed celebration cake", tag: "Cakes" },
+  { src: realJollofTurkey, alt: "Jollof rice with turkey and coleslaw", tag: "Catering" },
+  { src: realNoodles, alt: "Stir-fried noodles with vegetables", tag: "Catering" },
   { src: macarons, alt: "Stacked pastel macarons", tag: "Pastries" },
   { src: tart, alt: "Strawberry glazed tart", tag: "Pastries" },
   { src: wedding, alt: "Tiered floral wedding cake at sunset", tag: "Cakes" },
