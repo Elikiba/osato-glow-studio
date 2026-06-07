@@ -17,10 +17,10 @@ import realNoodles from "@/assets/real-noodles.jpg.asset.json";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Osato Bakes" },
+      { title: "Gallery — osatobakes" },
       { name: "description", content: "A photo gallery of celebration cakes, pastries and catering by Osato — handcrafted in Italy." },
-      { property: "og:title", content: "Gallery — Osato Bakes" },
-      { property: "og:description", content: "Cakes, pastries and catering by Osato Bakes." },
+      { property: "og:title", content: "Gallery — osatobakes" },
+      { property: "og:description", content: "Cakes, pastries and catering by osatobakes." },
       { property: "og:image", content: heroCake },
     ],
   }),

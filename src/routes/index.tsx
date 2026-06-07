@@ -16,9 +16,9 @@ import { whatsappLink } from "@/lib/whatsapp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Osato Bakes — Handcrafted Cakes & Italian Catering" },
+      { title: "osatobakes — Handcrafted Cakes & Italian Catering" },
       { name: "description", content: "Premium handcrafted cakes and Italian-inspired meals from Osato, a passionate baker and caterer based in Italy." },
-      { property: "og:title", content: "Osato Bakes — Handcrafted Cakes & Italian Catering" },
+      { property: "og:title", content: "osatobakes — Handcrafted Cakes & Italian Catering" },
       { property: "og:description", content: "Premium handcrafted cakes and Italian-inspired meals from Osato, baked with patience and love." },
     ],
   }),

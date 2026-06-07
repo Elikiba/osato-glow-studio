@@ -29,7 +29,7 @@ export function Footer() {
       </div>
       <div className="relative border-t border-border/40">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 text-xs text-muted-foreground flex justify-between">
-          <span>© {new Date().getFullYear()} Osato Bakes</span>
+          <span>© {new Date().getFullYear()} osatobakes</span>
           <span className="italic font-display">Baked with love</span>
         </div>
       </div>

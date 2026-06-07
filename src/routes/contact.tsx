@@ -5,10 +5,10 @@ import { whatsappLink, WHATSAPP_NUMBER } from "@/lib/whatsapp";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Order with Osato Bakes" },
+      { title: "Contact — Order with osatobakes" },
       { name: "description", content: "Place a custom order or enquire about catering with Osato — a baker and caterer based in Italy." },
-      { property: "og:title", content: "Contact — Order with Osato Bakes" },
-      { property: "og:description", content: "Place a custom order or enquire about catering with Osato Bakes." },
+      { property: "og:title", content: "Contact — Order with osatobakes" },
+      { property: "og:description", content: "Place a custom order or enquire about catering with osatobakes." },
     ],
   }),
   component: ContactPage,

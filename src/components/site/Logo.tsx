@@ -6,7 +6,7 @@ export function Logo({ className = "" }: { className?: string }) {
     <Link to="/" className={`group inline-flex items-center gap-3 leading-none ${className}`}>
       <img
         src={logoAsset.url}
-        alt="Osato Bakes"
+        alt="osatobakes"
         width={48}
         height={48}
         className="h-11 w-11 rounded-full object-cover shadow-soft ring-1 ring-foreground/10 transition-transform group-hover:scale-105"
