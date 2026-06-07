@@ -5,7 +5,7 @@ export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
       { title: "Menu — Cakes, Pastries & Catering by Osato" },
-      { name: "description", content: "A small, seasonal menu of celebration cakes, pastries and Italian-inspired catering by Osato Bakes." },
+      { name: "description", content: "A small, seasonal menu of celebration cakes, pastries and Italian-inspired catering by osatobakes." },
       { property: "og:title", content: "Menu — Cakes, Pastries & Catering by Osato" },
       { property: "og:description", content: "Celebration cakes, pastries and Italian-inspired catering." },
     ],

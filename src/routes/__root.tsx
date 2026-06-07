@@ -77,10 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Osato Bakes — Handcrafted Cakes & Italian Catering" },
+      { title: "osatobakes — Handcrafted Cakes & Italian Catering" },
       { name: "description", content: "Premium handcrafted cakes and Italian-inspired meals from Osato, baked with love in Italy." },
-      { name: "author", content: "Osato Bakes" },
-      { property: "og:title", content: "Osato Bakes — Handcrafted Cakes & Italian Catering" },
+      { name: "author", content: "osatobakes" },
+      { property: "og:title", content: "osatobakes — Handcrafted Cakes & Italian Catering" },
       { property: "og:description", content: "Premium handcrafted cakes and Italian-inspired meals from Osato, baked with love in Italy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
