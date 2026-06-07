@@ -1,0 +1,1 @@
+const a="/assets/gallery-tart-CIif4pzY.jpg",s="/assets/gallery-macarons-B_eHoj9f.jpg",e="/assets/real-cake-pink-D60A2_Ro.jpg",l="/assets/real-cake-roses-ZCnZFTll.jpg",r="/assets/real-jollof-chicken-CpQqBZIk.jpg";export{r as a,l as b,a as c,s as g,e as r};
