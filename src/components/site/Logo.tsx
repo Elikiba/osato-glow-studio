@@ -13,7 +13,7 @@ export function Logo({ className = "" }: { className?: string }) {
       />
       <span className="flex flex-col">
         <span className="font-display text-xl tracking-wide text-foreground">
-          Osato <span className="italic text-gold">bakes</span>
+          osato<span className="italic text-gold">bakes</span>
         </span>
         <span className="text-[10px] uppercase tracking-[0.32em] text-muted-foreground mt-1">
           Italia · since love
