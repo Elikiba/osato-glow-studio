@@ -1,0 +1,5 @@
+name = "osato-glow-studio"
+main = "dist/server/server.js"
+build = { command = "bun run build", cwd = "./" }
+compatibility_date = "2024-12-02"
+compatibility_flags = ["nodejs_compat"]
